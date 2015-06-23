@@ -12,7 +12,7 @@ h1, h2, h3, h4{
 	font-weight: 400;
 	text-rendering: optimizelegibility;
 }
-p{
+.listaTestimonios  p{
 	font-size: 13px;
 }
 /* nav bar*/
@@ -26,9 +26,9 @@ p{
 	color:#FFFFFF;
 }
 section#about{
-	padding: 20px 0px;
+	padding: 30px 0px;
 	overflow: hidden;
-	background: #c00;
+	background: #666;
 	color:#FFFFFF;
 }
 /*Caracterisitcas pequeñas*/
@@ -54,10 +54,122 @@ footer{
 	color: #FFFFFF;
 	padding: 20px 0px;
 }
+	footer ul{
+		padding-left: 0px;
+	}
+		footer ul li{
+			list-style: none;
+		}
 	footer p{
 		padding:10px 0px;
 	}
+	footer a{
+		color:#CCC;
+	}
+		footer a:hover{
+		color:#FFFFFF;
+		text-decoration: none;
+	}
+	.bottomFooter{
+		background-color: #111;
+		padding:10px 0px;
+		color:#CCC;
+        display: block;
+        overflow: hidden;
+	}
 
+.formIngreso {
+    width:50%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding:3% 5%;
+    margin-top:5%;
+    border-radius: 5px;
+}
+
+.formIngreso h3 {
+    color:#333333;
+    text-align: center;
+    margin:10px 0px;
+}
+
+.formIngreso p {
+    color:#333333;
+    margin:0 auto;
+    padding:10px;
+    text-align: center;
+}
+
+.formIngreso form {
+    text-align: center;
+}
+
+.formIngreso form input, select{
+    display: block;
+    width:80%;
+    margin:10px;
+    text-align: center;
+    margin:10px auto;
+    border-radius: 5px;
+    border:1px solid #CCCCCC;
+    padding:10px;
+}
+
+.formIngreso form input[type=submit] {
+    color:#FFFFFF;
+    background: red;
+    border: none;
+    padding:15px;
+}
+.formIngreso form input[type=submit]:hover{
+    background:#3334aa;
+}
+
+.formIngreso a {
+    font-size:12px;
+    color:#cccccc;
+    text-align: center;
+    width:70%;
+    margin:0 auto;
+    display: block;
+}
+.formIngreso a:hover{
+    color:#999999;
+    text-decoration:none;
+}
+.inscripcion button {
+    background: #ed4432;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding:6px 15px;
+    font-weight: 500;
+}
+
+#testimonios {
+    background: #000 url('../images/ninos_hero_1.jpg') no-repeat 0px 0px;
+    mini-height:300px;
+    margin-bottom: 50px;
+}
+
+.testimoniosIn {
+    background:rgba(0, 120, 55, .85);
+    padding-top:20%;
+    color:#FFFFFF;
+}
+
+.listaTestimonios img {
+    display: inline-block;
+    margin:10px;
+}
+
+.listaTestimonios h5 {
+
+}
+
+.inscripcion {
+    padding-top: 350px;
+    color:#FFF;
+}
 /*LOGIN SIMPLE*/
 .form-signin {
   max-width: 330px;
@@ -93,14 +205,39 @@ footer{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+
 /*MEDIA QUERIES*/
 @media (max-width: 767px) {
-	/*.navbar{
-		background-color:#99cc33;
-	}*/
 	.jumbotron p {
 		width: 100%;
 	}
+    .testimoniosIn {
+        background:rgba(0, 255, 105, .7);
+        padding-top:1%;
+    }
+    /*    login form ingresa*/
+    .formIngreso {
+        width:100%;
+        margin: 0 auto;
+        background-color: #FFF;
+        padding:3% 5%;
+        margin-top:5%;
+        border-radius: 5px;
+    }
+    /*inscribite*/
+    .inscripcion {
+        padding-top: 50px;
+        color:#FFF;
+        margin-bottom:20px;
+    }
+    /*TESTIMONIO*/
+    .testimoniosIn {
+        background:rgba(0, 120, 55, .85);
+        padding-top:1%;
+        color:#FFFFFF;
+    }
 }
 @media (max-width: 481px) {
 	.jumbotron p .btn{
@@ -108,4 +245,33 @@ footer{
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
+    .testimoniosIn {
+        background:rgba(0, 255, 105, .7);
+        padding-top:1%;
+    }
+    .formIngreso {
+        width:98%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding:3% 5%;
+        margin-top:5%;
+        border-radius: 5px;
+    }
+    /*inscribite*/
+    .inscripcion {
+        margin-bottom:20px;
+        padding-top: 50px;
+        color:#FFF;
+    }
+    /*TESTIMONIO*/
+    .testimoniosIn {
+        background:rgba(0, 120, 55, .85);
+        padding-top:1%;
+        color:#FFFFFF;
+    }
+}
+
+
+.topContainer {
+    margin-top: 60px;
 }
