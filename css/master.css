@@ -275,3 +275,54 @@ footer{
 .topContainer {
     margin-top: 60px;
 }
+
+.precio1, .precio3 {
+    text-align: center;
+    border:1px solid #ccc;
+    background:#f2f3f4;
+    margin-top:2%;
+}
+.precio1 ul, .precio2 ul, .precio3 ul{ padding-left:0px;text-align: center;}
+.precio1 ul li, .precio2 ul li, .precio3 ul li{ list-style: none;padding:10px 0px; border-bottom:1px solid #ccc;width: 70%; margin:0 auto;}
+.precio1 h3, .precio3 h3{padding: 10px 0px; color:brown; }
+.precio2 h3{padding: 15px 0px; color:indianred; font-size: 2em; font-weight: 700; }
+.precio2{
+    text-align: center;
+    border:1px solid #ccc;
+    background:#FAFAFA;
+}
+
+.tablaPrecios {
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+.topContainer h2 {
+    text-align: center;
+    padding:20px 0px;
+}
+
+.topContainer > p {
+    text-align: center;
+    padding:10px 100px;
+}
+
+.precio2 h1 {
+    padding: 10px 0px;
+    font-weight: 700;
+    background: #ee3300;
+    color:#fff;
+    border-radius: 50px;
+    width:70%;
+    text-align: center;
+    margin:30px auto;
+    padding:20px 0px;
+}
+.precio2 h1 small{
+    color:azure;}
+
+.btnContratar {
+    margin:0px 20px 20px;
+    font-size:12px;
+    font-weight:700;
+}
