@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Beegle: Dashboard</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <!-- Morris Charts CSS -->
+        <link href="css/plugins/morris.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Beegle: Dashboard</a>
+                </div>
+                <!-- Top Menu Items -->
+                <ul class="nav navbar-right top-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                        <ul class="dropdown-menu message-dropdown">
+                            <li class="message-preview">
+                                <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Usuario Normal</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            </li>
+                            <li class="message-preview">
+                                <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Usuario Normal</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            </li>
+                            <li class="message-preview">
+                                <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Usuario Normal</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            </li>
+                            <li class="message-footer">
+                                <a href="#">Leer todos los mensajes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                        <ul class="dropdown-menu alert-dropdown">
+                            <li>
+                                <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">View All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Esteban Zelada<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Mensajes</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-gear"></i> Configuración</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li>
+                            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Inicio</a>
+                        </li>
+                        <li>
+                            <a href="charts.html"><i class="fa fa-fw fa-users"></i> Pacientes</a>
+                        </li>
+                        <li class="active">
+                            <a href="tables.html"><i class="fa fa-fw fa-table"></i> Pruebas</a>
+                        </li>
+                        <li>
+                            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Informes</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-fw fa-bar-chart-o"></i> Estadisticas</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-envelope"></i> Mensajes</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Tareas</a>
+                        </li>
+                        <li>
+                            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Configración</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-danger"><i class="fa fa-info-circle"></i> Bases del razonamiento</h3>
+                                <p>La prueba que viene a continuación a veces te puede resultar difícil por lo que debes estar muy atento a las instruccione que se te vayan dando. Esta prueba consta de varias tareas y en cada una se te dirá lo que debes hacer, el tiempo del que dispones y cuando ha terminado. Una vez finalizado el tiempo, pasaremos a la siguiente tarea.</p>
+                            <!--<ol class="breadcrumb">
+                                <li class="active">
+                                    <i class="fa fa-dashboard"></i>Dashboard</li>
+                            </ol>-->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-warning alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h4>Tarea 1: Termina la Frase</h4>
+                                <p>Tu tarea consiste en encontrar la palabra que completa la frase y seleccionar tu respuesta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form action="#">
+                                <!--Pregunta 1 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">1.- Avión es a aire como bicicleta es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta1" id="inlineCheckbox1-1" value="option1-1"> 1. Agua
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta1" id="inlineCheckbox1-2" value="option1-2"> 2. Tierra
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta1" id="inlineCheckbox1-3" value="option1-3"> 3. Cielo
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta1" id="inlineCheckbox1-4" value="option1-4"> 4. Rueda
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 2 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">2.- Blanco es a negro como día es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta2" id="inlineCheckbox2-1" value="option2-1"> 1. Claro
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta2" id="inlineCheckbox2-2" value="option2-2"> 2. Noche
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta2" id="inlineCheckbox2-3" value="option2-3"> 3. Desayunar
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta2" id="inlineCheckbox2-4" value="option2-4"> 4. Despertar
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 3 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">3.- Desayuno es a levantarse como cena es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta3" id="inlineCheckbox3-1" value="option3-1"> 1. Mañana
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta3" id="inlineCheckbox3-2" value="option3-2"> 2. Acostarse
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta3" id="inlineCheckbox3-3" value="option3-3"> 3. Sábado
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta3" id="inlineCheckbox3-4" value="option3-4"> 4. Hambre
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 4 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">4.- Cama es a acostarse como silla es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta4" id="inlineCheckbox4-1" value="option4-1"> 1. Descansar
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta4" id="inlineCheckbox4-2" value="option4-2"> 2. Mesa
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta4" id="inlineCheckbox4-3" value="option4-3"> 3. Sentarse
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta4" id="inlineCheckbox4-4" value="option4-4"> 4. Comer
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 5 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">5.- Leon es a selva como ballena es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta5" id="inlineCheckbox5-1" value="option5-1"> 1. Desierto
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta5" id="inlineCheckbox5-2" value="option5-2"> 2. Rio
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta5" id="inlineCheckbox5-3" value="option5-3"> 3. Agua
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta5" id="inlineCheckbox5-4" value="option5-4"> 4. Mar
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 6 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">6.- Fruta es a hambre como agua es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta6" id="inlineCheckbox6-1" value="option6-1"> 1. Sueño
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta6" id="inlineCheckbox6-2" value="option6-2"> 2. Hambre
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta6" id="inlineCheckbox6-3" value="option6-3"> 3. Sed
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta6" id="inlineCheckbox6-4" value="option6-4"> 4. Cansancio
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 7 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">7.- Nieve es a invierno como playa es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta7" id="inlineCheckbox7-1" value="option7-1"> 1. Primavera
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta7" id="inlineCheckbox7-2" value="option7-2"> 2. Verano
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta7" id="inlineCheckbox7-3" value="option7-3"> 3. Otoño
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta7" id="inlineCheckbox7-4" value="option7-4"> 4. Inverno
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 8 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">8.- Sombrero es a cabeza como guante es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta8" id="inlineCheckbox8-1" value="option8-1"> 1. Pie
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta8" id="inlineCheckbox8-2" value="option8-2"> 2. Chaqueta
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta8" id="inlineCheckbox8-3" value="option8-3"> 3. Camisa
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta8" id="inlineCheckbox8-4" value="option8-4"> 4. Mano
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 9 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">9.- Casa es a persona como nido es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta9" id="inlineCheckbox9-1" value="option9-1"> 1. Pez
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta9" id="inlineCheckbox9-2" value="option9-2"> 2. Pájaro
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta9" id="inlineCheckbox9-3" value="option9-3"> 3. Perro
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta9" id="inlineCheckbox9-4" value="option9-4"> 4. Gato
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <!--Pregunta 10 -->
+                                <div class="form-group">
+                                    <h4 class="text-primary">10.- Lápiz es a hoja como tiza es a </h4>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta10" id="inlineCheckbox10-1" value="option10-1"> 1. Pizarra
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta10" id="inlineCheckbox10-2" value="option10-2"> 2. Suelo
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta10" id="inlineCheckbox10-3" value="option10-3"> 3. Borrador
+                                    </label>
+                                    <label class="checkbox-inline noseleccionada">
+                                        <input type="radio" name="pregunta10" id="inlineCheckbox10-4" value="option10-4"> 4. Mano
+                                    </label>
+                                </div>
+                                <hr class="featurette-divider">
+                                <p>
+                                    <input class="btn btn-default" type="reset" value="Borrar Respuestas">
+                                    <input class="btn btn-success" type="submit" value="Enviar Respuestas">
+                                </p>
+                            </form>
+                        </div>
+                    </div>  
+                    <!-- /.row -->
+                    <div class="row">
+                    </div>  
+                    <!-- /.row -->
+                    
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Morris Charts JavaScript -->
+        <script src="js/plugins/morris/raphael.min.js"></script>
+        <script src="js/plugins/morris/morris.min.js"></script>
+        <script src="js/plugins/morris/morris-data.js"></script>
+        <script>
+            // pinta el label del radio button si es seleccionado. 
+            $('input[type=radio]').change(function(){
+                if($(this).prop("checked")){
+                    $(this).parent().addClass('seleccionada');
+                    $(this).parent().siblings().removeClass('seleccionada');
+                }
+            });
+            
+        </script>
+    </body>
+
+</html>
